@@ -1,0 +1,19 @@
+<h1>Index</h1>
+
+
+<% @tasks.each do |task| %>
+  <h4><%= link_to task.title, task_path(task.id) %><button type="button">Delete!</button></h4>
+<% end %>
+
+<%= link_to "Create new task", task_new_path %>
+
+
+
+
+
+
+
+
+
+
+
